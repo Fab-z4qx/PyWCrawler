@@ -11,7 +11,6 @@ import validators
 
 from bs4 import BeautifulSoup
 from queue import Queue
-from HTMLParser import HTMLParser
 
 reload(sys)  
 sys.setdefaultencoding('utf8')
