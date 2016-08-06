@@ -17,9 +17,6 @@ sys.setdefaultencoding('utf8')
 
 logging.basicConfig(format='%(asctime)s [%(module)10s] [%(levelname)6s] %(message)s')
 log = logging.getLogger()
-#log.setLevel(logging.DEBUG)
-#log.setLevel(logging.INFO)
-
 visitedUrl = []
 visitedDomain = []
 urlQueue = Queue()
@@ -78,7 +75,6 @@ def parsePage(page):
 	except:
 		log.error('parsing error : %s' % sys.exc_info()[0])
 
-		#log.debug("Url : %s " % a['href'])
 	log.debug("Queue Size : %s "  % urlQueue.qsize())
 
 
@@ -114,7 +110,6 @@ if __name__ == '__main__':
 	else:
 		entryUrl = "http://fossbytes.com/"
 
-	#entryUrl = "http://fossbytes.com/"
 	currentDomain = getDomaine(entryUrl)
 	search(entryUrl)
 	
