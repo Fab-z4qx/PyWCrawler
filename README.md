@@ -1,6 +1,7 @@
 # PyWCrawler
 
-Simple python webCrawler write for fun
+Simple python webCrawler written for fun
+lot of improvements can be made :) 
 
 usage: pyCrawler.py [-h] [-sd SCAN_DELAY] [-d] [-l LINK]
 
